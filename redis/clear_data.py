@@ -59,10 +59,10 @@ def clear_data_with_prefix(host, port, password, prefix):
     print("Removed : %s" % remove_cnt)
 
 def print_instruct():
-    print('Usage: python ', sys.argv[0], ' host port password op [prefix]')
-    print('op: ')
-    print(' clear_no_expire - clear all data with no expire time')
-    print(' clear_prefix - clear data starts with [prefix]')
+    print('Usage: python', sys.argv[0], 'host port password op [prefix]')
+    print('   op:')
+    print('    clear_no_expire - clear all data with no expire time')
+    print('    clear_prefix - clear data starts with [prefix]')
 
 if __name__ == '__main__':
     if len(sys.argv) < 5:

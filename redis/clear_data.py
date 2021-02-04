@@ -8,8 +8,8 @@ from datetime import datetime
 
 # define logging style for removed keys
 def initLogSetting():
-    date = datetime.now().strftime('_%y%m%d_%H_%M')
-    filename = './clear_' + date + '.log'
+    date = datetime.now().strftime('%y%m%d_%H_%M')
+    filename = './log/clear_' + date + '.log'
     logging.basicConfig(
         level = logging.INFO,
         format = '%(asctime)s  %(filename)s : %(levelname)s  %(message)s',

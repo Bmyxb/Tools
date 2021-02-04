@@ -9,7 +9,7 @@ from datetime import datetime
 # logging style
 def initLogSetting():
     date = datetime.now().strftime('%y%m%d_%H_%M')
-    filename = '.log/stat_' + date + '.log'
+    filename = './log/stat_' + date + '.log'
     logging.basicConfig(
         level = logging.INFO,
         format = '%(asctime)s  %(filename)s : %(levelname)s  %(message)s',
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     db_port = sys.argv[2]
     db_password = sys.argv[3]
     stat_size = int(sys.argv[4])
-    log_item = len(sys.argv) == 6
+    log_item = (len(sys.argv) == 6 and sys.argv[5] == str(1))
     
     stat_key_size(db_host, db_port, db_password, stat_size, log_item)
     

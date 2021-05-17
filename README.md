@@ -16,3 +16,7 @@ This script is used to detect big keys for analyzing memory usage.(Using rdb is 
 'stat_lower_bound' filters small keys size < lower bound.
 'log_item' 1 means output eahc item in a list(large than lower bound) too, ignore or 0 to close.
 > python3 stat_key_size.py 127.0.0.1 6379 [password] [stat_lower_bound] *[log_item]
+
+## 3. date_loop.sh
+Loop days in [begin_date, end_date) to run date related tasks.
+To use it, fill the dates and task in the shell and run it.
